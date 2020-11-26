@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  apache:
+    build:
+      ./apache
+    image: docker.ub.gu.se/gub-apache2:release-2020.11.003
+    restart: always
+    network_mode: "host"
+    volumes:
+      - "/opt/gub-apache2/sites:/etc/apache2/sites-enabled"
+      - "/opt/gub-apache2/logs:/var/log/apache2"
+      - "/opt/gub-apache2/certs:/etc/ssl/apache2"
