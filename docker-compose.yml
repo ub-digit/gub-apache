@@ -4,10 +4,11 @@ services:
   apache:
 #    build:
 #      ./apache
-    image: docker.ub.gu.se/gub-apache2:release-2020.11.004
+    image: docker.ub.gu.se/gub-apache2:release-2020.11.005
     restart: always
     network_mode: "host"
     volumes:
       - "/opt/gub-apache2/sites:/etc/apache2/sites-enabled"
+      - "/opt/gub-apache2/conf:/etc/apache2/conf-enabled"
       - "/opt/gub-apache2/logs:/var/log/apache2"
       - "/opt/gub-apache2/ssl:/etc/ssl/apache2"
