@@ -7,7 +7,7 @@ Apache server for reverse proxying web containers.
 Exempel: 
 
 ```bash
-docker build -t docker.ub.gu.se/gub-apache2:202Y.MM.XXX .
+docker build -t docker.ub.gu.se/gub-apache2:release-202Y.MM.XXX .
 ```
 
 eller ändra till önskad image-tag i docker-compose.yml och kör sedan:
@@ -15,7 +15,7 @@ eller ändra till önskad image-tag i docker-compose.yml och kör sedan:
 ```bash
 docker-compose build
 docker login docker.ub.gu.se
-docker push docker.ub.gu.se/gub-apache2:202Y.MM.XXX
+docker push docker.ub.gu.se/gub-apache2:release-202Y.MM.XXX
 ```
 
 ## Exempel på start av tjänsten
