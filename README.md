@@ -7,24 +7,20 @@ Apache server for reverse proxying web containers.
 Exempel: 
 
 ```bash
-docker build -t docker.ub.gu.se/public-apache:202Y.MM.XXX .
+docker build -t docker.ub.gu.se/gub-apache2:202Y.MM.XXX .
 ```
 
 eller ändra till önskad image-tag i docker-compose.yml och kör sedan:
 
 ```bash
 docker-compose build
-docker login socker.ub.gu.se
-docker push docker.ub.gu.se/public-apache:202Y.MM.XXX
+docker login docker.ub.gu.se
+docker push docker.ub.gu.se/gub-apache2:202Y.MM.XXX
 ```
 
 ## Exempel på start av tjänsten
 
-###  Star med docker run
-
-```bash
-docker run -it --rm --name gub-apache --net host -v /opt/apache/sites:/etc/apache2/sites-enabled -v /opt/apache/log:/var/log/apache2 -v /opt/apache/cert:/var/tmp/apache-cert gub-apache:1
-```
+###  Start med docker run
 
 ```bash
 docker run -it --rm --name gub-apache --net host -v /opt/apache/sites:/etc/apache2/sites-enabled -v /opt/apache/log:/var/log/apache2 -v /opt/apache/cert:/var/tmp/apache-cert docker.ub.gu.se/gub-apache2:release-2020.11.001
