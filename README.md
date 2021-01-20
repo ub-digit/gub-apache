@@ -1,4 +1,4 @@
-# GUB-Apache2
+# GUB-Apache
 
 Apache2-server för reverse-proxying av containers.
 
