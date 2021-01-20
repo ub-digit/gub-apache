@@ -2,9 +2,7 @@ version: "3"
 
 services:
   apache:
-#    build:
-#      ./apache
-    image: docker.ub.gu.se/gub-apache2:release-2020.11.005
+    image: docker.ub.gu.se/gub-apache2:release-2020.12.001
     restart: always
     network_mode: "host"
     volumes:
