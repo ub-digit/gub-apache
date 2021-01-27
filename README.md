@@ -16,6 +16,14 @@ docker push docker.ub.gu.se/gub-apache2:release-202Y.MM.XXX
 docker-compose up -d
 ```
 
+## Kontrollera konfigurationen innnan man startar om tjänsten
+
+Detta avslöjar eventuella felskrivningar som annars kunde göra att apache inte startar igen och därmed påverkar alla körande tjänster på servern.
+
+```bash
+docker exec -it gub-apache_apache_1 apachectl -t
+```
+
 ## Starta om tjänsten efter instalation och efter att konfigurationen ändrats
 
 ```bash
