@@ -24,7 +24,7 @@ Detta avslöjar eventuella felskrivningar som annars kunde göra att apache inte
 docker exec -it gub-apache_apache_1 apachectl -t
 ```
 
-## Starta om tjänsten efter instalation och efter att konfigurationen ändrats
+## Starta om tjänsten efter installation och efter att konfigurationen ändrats
 
 ```bash
 docker exec -it gub-apache_apache_1 apachectl -k restart -DFOREGROUND
