@@ -10,3 +10,6 @@ services:
       - "/opt/gub-apache2/conf:/etc/apache2/conf-enabled"
       - "/opt/gub-apache2/logs:/var/log/apache2"
       - "/opt/gub-apache2/ssl:/etc/ssl/apache2"
+      - "/opt/gub-apache2/data:/data"
+      - "/opt/gub-apache2/webroot:/var/www/html"
+      - "/etc/letsencrypt/live:/etc/letsencrypt/live"
