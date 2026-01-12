@@ -12,4 +12,4 @@ services:
       - "/opt/gub-apache2/ssl:/etc/ssl/apache2"
       - "/opt/gub-apache2/data:/data"
       - "/opt/gub-apache2/webroot:/var/www/html"
-      - "/etc/letsencrypt/live:/etc/letsencrypt/live"
+      - "/etc/letsencrypt:/etc/letsencrypt:ro"
