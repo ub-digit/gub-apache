@@ -8,6 +8,7 @@ services:
     volumes:
       - "/opt/gub-apache2/sites:/etc/apache2/sites-enabled"
       - "/opt/gub-apache2/conf:/etc/apache2/conf-enabled"
+      - "/opt/gub-apache2/conf-shared:/etc/apache2/conf-shared"
       - "/opt/gub-apache2/logs:/var/log/apache2"
       - "/opt/gub-apache2/ssl:/etc/ssl/apache2"
       - "/opt/gub-apache2/data:/data"
